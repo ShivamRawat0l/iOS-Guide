@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5E19202B2A41E5C10073E844 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E19202A2A41E5C10073E844 /* OnboardingView.swift */; };
 		5E1920302A41EBFD0073E844 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E19202F2A41EBFD0073E844 /* Constants.swift */; };
+		5E240C662A55803B0038520B /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E240C652A55803B0038520B /* HomeScreenView.swift */; };
 		5E3F31CF2A4175170076487E /* GuideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3F31CE2A4175170076487E /* GuideApp.swift */; };
 		5E3F31D12A4175170076487E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3F31D02A4175170076487E /* ContentView.swift */; };
 		5E3F31D32A4175180076487E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E3F31D22A4175180076487E /* Assets.xcassets */; };
@@ -16,6 +17,11 @@
 		5E3F31E12A4175180076487E /* GuideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3F31E02A4175180076487E /* GuideTests.swift */; };
 		5E3F31EB2A4175180076487E /* GuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3F31EA2A4175180076487E /* GuideUITests.swift */; };
 		5E3F31ED2A4175180076487E /* GuideUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3F31EC2A4175180076487E /* GuideUITestsLaunchTests.swift */; };
+		5E9013A42A5828220025EDCA /* PairGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9013A32A5828220025EDCA /* PairGameView.swift */; };
+		5E9013A62A58282C0025EDCA /* PairGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9013A52A58282C0025EDCA /* PairGameModel.swift */; };
+		5E9013A82A5828390025EDCA /* PairGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9013A72A5828390025EDCA /* PairGameViewModel.swift */; };
+		5EBC44642A4E7E01003A56F0 /* AnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBC44632A4E7E01003A56F0 /* AnimationHelper.swift */; };
+		5EBC44672A4EA2FB003A56F0 /* OnboardingAnimationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBC44662A4EA2FB003A56F0 /* OnboardingAnimationVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +44,7 @@
 /* Begin PBXFileReference section */
 		5E19202A2A41E5C10073E844 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		5E19202F2A41EBFD0073E844 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5E240C652A55803B0038520B /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
 		5E3F31CB2A4175170076487E /* Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E3F31CE2A4175170076487E /* GuideApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideApp.swift; sourceTree = "<group>"; };
 		5E3F31D02A4175170076487E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,6 +56,11 @@
 		5E3F31E62A4175180076487E /* GuideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuideUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E3F31EA2A4175180076487E /* GuideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideUITests.swift; sourceTree = "<group>"; };
 		5E3F31EC2A4175180076487E /* GuideUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5E9013A32A5828220025EDCA /* PairGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairGameView.swift; sourceTree = "<group>"; };
+		5E9013A52A58282C0025EDCA /* PairGameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairGameModel.swift; sourceTree = "<group>"; };
+		5E9013A72A5828390025EDCA /* PairGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairGameViewModel.swift; sourceTree = "<group>"; };
+		5EBC44632A4E7E01003A56F0 /* AnimationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationHelper.swift; sourceTree = "<group>"; };
+		5EBC44662A4EA2FB003A56F0 /* OnboardingAnimationVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingAnimationVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +91,8 @@
 		5E1920272A41E5710073E844 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				5E9013A22A5828080025EDCA /* PairGame */,
+				5E240C612A557FC90038520B /* HomeScreen */,
 				5E1920282A41E57F0073E844 /* Onboarding */,
 			);
 			path = Screens;
@@ -87,7 +101,8 @@
 		5E1920282A41E57F0073E844 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				5E9D1BAD2A4D9C8D00E2473C /* View */,
+				5E19202A2A41E5C10073E844 /* OnboardingView.swift */,
+				5EBC44662A4EA2FB003A56F0 /* OnboardingAnimationVM.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -114,9 +129,18 @@
 			path = Register;
 			sourceTree = "<group>";
 		};
+		5E240C612A557FC90038520B /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				5E240C652A55803B0038520B /* HomeScreenView.swift */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
 		5E3F31C22A4175170076487E = {
 			isa = PBXGroup;
 			children = (
+				5EBC44622A4E7DD8003A56F0 /* Helpers */,
 				5E3F31CD2A4175170076487E /* Guide */,
 				5E3F31DF2A4175180076487E /* GuideTests */,
 				5E3F31E92A4175180076487E /* GuideUITests */,
@@ -175,12 +199,22 @@
 			path = GuideUITests;
 			sourceTree = "<group>";
 		};
-		5E9D1BAD2A4D9C8D00E2473C /* View */ = {
+		5E9013A22A5828080025EDCA /* PairGame */ = {
 			isa = PBXGroup;
 			children = (
-				5E19202A2A41E5C10073E844 /* OnboardingView.swift */,
+				5E9013A32A5828220025EDCA /* PairGameView.swift */,
+				5E9013A52A58282C0025EDCA /* PairGameModel.swift */,
+				5E9013A72A5828390025EDCA /* PairGameViewModel.swift */,
 			);
-			path = View;
+			path = PairGame;
+			sourceTree = "<group>";
+		};
+		5EBC44622A4E7DD8003A56F0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5EBC44632A4E7E01003A56F0 /* AnimationHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,7 +349,13 @@
 			files = (
 				5E1920302A41EBFD0073E844 /* Constants.swift in Sources */,
 				5E19202B2A41E5C10073E844 /* OnboardingView.swift in Sources */,
+				5E9013A82A5828390025EDCA /* PairGameViewModel.swift in Sources */,
+				5EBC44642A4E7E01003A56F0 /* AnimationHelper.swift in Sources */,
+				5E9013A62A58282C0025EDCA /* PairGameModel.swift in Sources */,
+				5EBC44672A4EA2FB003A56F0 /* OnboardingAnimationVM.swift in Sources */,
 				5E3F31D12A4175170076487E /* ContentView.swift in Sources */,
+				5E240C662A55803B0038520B /* HomeScreenView.swift in Sources */,
+				5E9013A42A5828220025EDCA /* PairGameView.swift in Sources */,
 				5E3F31CF2A4175170076487E /* GuideApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
