@@ -20,6 +20,15 @@ struct HomeScreenView: View {
                 .background(Color.red)
             }
             .buttonStyle(PlainButtonStyle())
+            NavigationLink {
+                EmojiArtView()
+            } label: {
+                VStack(content: {
+                    Text("Emoji Art")
+                })
+                .background(Color.green)
+            }
+            .buttonStyle(PlainButtonStyle())
         })
     }
 }

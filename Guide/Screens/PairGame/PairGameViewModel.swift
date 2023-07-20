@@ -7,15 +7,27 @@
 
 import Foundation
 
-class PairGameViewModel : ObservableObject {
+class PairGameViewModel : ObservableObject{
     @Published var model = PairGameModel();
     
     var cards : [card] {
         model.cards
     }
     
+    var dealt: [card] {
+        model.dealtCards
+    }
+    
+    func reset () {
+        model.resetDealtCards()
+    }
+    
     func chooseCard(index : Int) {
-        model.chooseCard(index: index)
+        model.chooseCard(id: index)
+    }
+    
+    func deal(card:card) {
+        model.deal(card: card);
     }
     
 }
