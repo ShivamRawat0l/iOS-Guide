@@ -26,6 +26,10 @@
 		5ED764CB2A680A360019DFC8 /* EmojiArtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED764CA2A680A360019DFC8 /* EmojiArtView.swift */; };
 		5ED764CD2A680A3F0019DFC8 /* EmojiArtViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED764CC2A680A3F0019DFC8 /* EmojiArtViewModel.swift */; };
 		5ED764CF2A680A480019DFC8 /* EmojiArtModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED764CE2A680A480019DFC8 /* EmojiArtModel.swift */; };
+		5EE4492F2A77D78F002AD1B2 /* MessageBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE4492E2A77D78F002AD1B2 /* MessageBubble.swift */; };
+		5EF7E7312A77B02E009E4C58 /* ChatScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF7E7302A77B02E009E4C58 /* ChatScreenModel.swift */; };
+		5EF7E7332A77B0AA009E4C58 /* ChatScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF7E7322A77B0AA009E4C58 /* ChatScreenViewModel.swift */; };
+		5EF83AC32A7798870098CDF9 /* ChatScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF83AC22A7798870098CDF9 /* ChatScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +73,10 @@
 		5ED764CA2A680A360019DFC8 /* EmojiArtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiArtView.swift; sourceTree = "<group>"; };
 		5ED764CC2A680A3F0019DFC8 /* EmojiArtViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiArtViewModel.swift; sourceTree = "<group>"; };
 		5ED764CE2A680A480019DFC8 /* EmojiArtModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiArtModel.swift; sourceTree = "<group>"; };
+		5EE4492E2A77D78F002AD1B2 /* MessageBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble.swift; sourceTree = "<group>"; };
+		5EF7E7302A77B02E009E4C58 /* ChatScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreenModel.swift; sourceTree = "<group>"; };
+		5EF7E7322A77B0AA009E4C58 /* ChatScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreenViewModel.swift; sourceTree = "<group>"; };
+		5EF83AC22A7798870098CDF9 /* ChatScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,7 @@
 		5E1920272A41E5710073E844 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				5EF83AC12A77986E0098CDF9 /* ChatScreen */,
 				5ED764C92A680A260019DFC8 /* EmojiArt */,
 				5E9013A22A5828080025EDCA /* PairGame */,
 				5E240C612A557FC90038520B /* HomeScreen */,
@@ -133,6 +142,7 @@
 		5E19202E2A41E97E0073E844 /* Register */ = {
 			isa = PBXGroup;
 			children = (
+				5E19202D2A41E9650073E844 /* Services */,
 				5E19202F2A41EBFD0073E844 /* Constants.swift */,
 			);
 			path = Register;
@@ -170,8 +180,8 @@
 		5E3F31CD2A4175170076487E /* Guide */ = {
 			isa = PBXGroup;
 			children = (
+				5EE4492D2A77D781002AD1B2 /* Helper */,
 				5E19202E2A41E97E0073E844 /* Register */,
-				5E19202D2A41E9650073E844 /* Services */,
 				5E19202C2A41E5FD0073E844 /* Views */,
 				5E1920272A41E5710073E844 /* Screens */,
 				5E3F31CE2A4175170076487E /* GuideApp.swift */,
@@ -235,6 +245,32 @@
 				5ED764CE2A680A480019DFC8 /* EmojiArtModel.swift */,
 			);
 			path = EmojiArt;
+			sourceTree = "<group>";
+		};
+		5EE4492D2A77D781002AD1B2 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				5EE4492E2A77D78F002AD1B2 /* MessageBubble.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		5EE449302A781F29002AD1B2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5EF83AC12A77986E0098CDF9 /* ChatScreen */ = {
+			isa = PBXGroup;
+			children = (
+				5EE449302A781F29002AD1B2 /* Components */,
+				5EF83AC22A7798870098CDF9 /* ChatScreenView.swift */,
+				5EF7E7302A77B02E009E4C58 /* ChatScreenModel.swift */,
+				5EF7E7322A77B0AA009E4C58 /* ChatScreenViewModel.swift */,
+			);
+			path = ChatScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,14 +404,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E1920302A41EBFD0073E844 /* Constants.swift in Sources */,
+				5EF7E7312A77B02E009E4C58 /* ChatScreenModel.swift in Sources */,
 				5E19202B2A41E5C10073E844 /* OnboardingView.swift in Sources */,
 				5E9013A82A5828390025EDCA /* PairGameViewModel.swift in Sources */,
 				5EBC44642A4E7E01003A56F0 /* AnimationHelper.swift in Sources */,
 				5E9013A62A58282C0025EDCA /* PairGameModel.swift in Sources */,
 				5EBC44672A4EA2FB003A56F0 /* OnboardingAnimationVM.swift in Sources */,
+				5EF83AC32A7798870098CDF9 /* ChatScreenView.swift in Sources */,
+				5EE4492F2A77D78F002AD1B2 /* MessageBubble.swift in Sources */,
 				5E3F31D12A4175170076487E /* ContentView.swift in Sources */,
 				5E240C662A55803B0038520B /* HomeScreenView.swift in Sources */,
 				5ED764C82A668DFE0019DFC8 /* Pie.swift in Sources */,
+				5EF7E7332A77B0AA009E4C58 /* ChatScreenViewModel.swift in Sources */,
 				5E9013A42A5828220025EDCA /* PairGameView.swift in Sources */,
 				5ED764CF2A680A480019DFC8 /* EmojiArtModel.swift in Sources */,
 				5E3F31CF2A4175170076487E /* GuideApp.swift in Sources */,

@@ -21,6 +21,15 @@ struct HomeScreenView: View {
             }
             .buttonStyle(PlainButtonStyle())
             NavigationLink {
+                ChatScreenView()
+            } label: {
+                VStack(content: {
+                    Text("Message")
+                })
+                .background(Color.green)
+            }
+            .buttonStyle(PlainButtonStyle())
+            NavigationLink {
                 EmojiArtView()
             } label: {
                 VStack(content: {

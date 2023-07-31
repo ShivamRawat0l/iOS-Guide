@@ -12,7 +12,7 @@ struct PairGameView : View {
     @ObservedObject var viewModel = PairGameViewModel();
     @Namespace private var dealCardsNamespace;
     @State var cardDealt  = false;
-    
+   
     func deal(card: card){
         viewModel.deal(card: card);
     }

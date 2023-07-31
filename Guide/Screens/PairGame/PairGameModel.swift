@@ -10,7 +10,7 @@ import Foundation
 struct card : Identifiable{
     var id : Int;
     var emoji : String;
-    var isFaceDown: Bool = false;
+    var isFaceDown: Bool = true;
     var isMatched: Bool = false;
 }
 

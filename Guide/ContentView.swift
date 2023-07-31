@@ -10,12 +10,13 @@ import SwiftUI
 struct ContentView: View {
     @AppStorage("onboardingComplete") var onboardingComplete = false;
     var body: some View {
-        if(onboardingComplete){
+        if false{
             OnboardingView()
         }
         else{
             NavigationView{
-                HomeScreenView()
+                ChatScreenView()
+                //HomeScreenView()
             }
         }
     }
