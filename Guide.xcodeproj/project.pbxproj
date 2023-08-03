@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E0A4F1C2A7BCB7300536EAD /* CounterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A4F1B2A7BCB7300536EAD /* CounterScreen.swift */; };
+		5E0A4F242A7BFE9A00536EAD /* KnobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A4F232A7BFE9A00536EAD /* KnobView.swift */; };
+		5E0A4F282A7C0F3300536EAD /* ImageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A4F272A7C0F3300536EAD /* ImageListView.swift */; };
+		5E0A4F2B2A7C0F8E00536EAD /* ImageListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A4F2A2A7C0F8E00536EAD /* ImageListModel.swift */; };
+		5E0A4F2D2A7C0FF200536EAD /* ImageListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A4F2C2A7C0FF200536EAD /* ImageListController.swift */; };
+		5E0A4F2F2A7C1D9D00536EAD /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A4F2E2A7C1D9D00536EAD /* ImageView.swift */; };
 		5E19202B2A41E5C10073E844 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E19202A2A41E5C10073E844 /* OnboardingView.swift */; };
 		5E1920302A41EBFD0073E844 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E19202F2A41EBFD0073E844 /* Constants.swift */; };
 		5E240C662A55803B0038520B /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E240C652A55803B0038520B /* HomeScreenView.swift */; };
@@ -50,6 +56,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E0A4F1B2A7BCB7300536EAD /* CounterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterScreen.swift; sourceTree = "<group>"; };
+		5E0A4F232A7BFE9A00536EAD /* KnobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnobView.swift; sourceTree = "<group>"; };
+		5E0A4F272A7C0F3300536EAD /* ImageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListView.swift; sourceTree = "<group>"; };
+		5E0A4F2A2A7C0F8E00536EAD /* ImageListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListModel.swift; sourceTree = "<group>"; };
+		5E0A4F2C2A7C0FF200536EAD /* ImageListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListController.swift; sourceTree = "<group>"; };
+		5E0A4F2E2A7C1D9D00536EAD /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		5E19202A2A41E5C10073E844 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		5E19202F2A41EBFD0073E844 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5E240C652A55803B0038520B /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
@@ -104,9 +116,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E0A4F1A2A7BCB6000536EAD /* CounterScreen */ = {
+			isa = PBXGroup;
+			children = (
+				5E0A4F1B2A7BCB7300536EAD /* CounterScreen.swift */,
+			);
+			path = CounterScreen;
+			sourceTree = "<group>";
+		};
+		5E0A4F1D2A7BDECA00536EAD /* QuestionScreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = QuestionScreen;
+			sourceTree = "<group>";
+		};
+		5E0A4F222A7BFE8C00536EAD /* Testing */ = {
+			isa = PBXGroup;
+			children = (
+				5E0A4F232A7BFE9A00536EAD /* KnobView.swift */,
+			);
+			path = Testing;
+			sourceTree = "<group>";
+		};
+		5E0A4F252A7C0F1B00536EAD /* ThinkingInSwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				5E0A4F262A7C0F2300536EAD /* Exercise1 */,
+			);
+			path = ThinkingInSwiftUI;
+			sourceTree = "<group>";
+		};
+		5E0A4F262A7C0F2300536EAD /* Exercise1 */ = {
+			isa = PBXGroup;
+			children = (
+				5E0A4F2C2A7C0FF200536EAD /* ImageListController.swift */,
+				5E0A4F272A7C0F3300536EAD /* ImageListView.swift */,
+				5E0A4F2A2A7C0F8E00536EAD /* ImageListModel.swift */,
+				5E0A4F2E2A7C1D9D00536EAD /* ImageView.swift */,
+			);
+			path = Exercise1;
+			sourceTree = "<group>";
+		};
 		5E1920272A41E5710073E844 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				5E0A4F252A7C0F1B00536EAD /* ThinkingInSwiftUI */,
+				5E0A4F222A7BFE8C00536EAD /* Testing */,
+				5E0A4F1D2A7BDECA00536EAD /* QuestionScreen */,
+				5E0A4F1A2A7BCB6000536EAD /* CounterScreen */,
 				5EF83AC12A77986E0098CDF9 /* ChatScreen */,
 				5ED764C92A680A260019DFC8 /* EmojiArt */,
 				5E9013A22A5828080025EDCA /* PairGame */,
@@ -403,16 +461,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E0A4F2F2A7C1D9D00536EAD /* ImageView.swift in Sources */,
 				5E1920302A41EBFD0073E844 /* Constants.swift in Sources */,
 				5EF7E7312A77B02E009E4C58 /* ChatScreenModel.swift in Sources */,
 				5E19202B2A41E5C10073E844 /* OnboardingView.swift in Sources */,
 				5E9013A82A5828390025EDCA /* PairGameViewModel.swift in Sources */,
 				5EBC44642A4E7E01003A56F0 /* AnimationHelper.swift in Sources */,
 				5E9013A62A58282C0025EDCA /* PairGameModel.swift in Sources */,
+				5E0A4F242A7BFE9A00536EAD /* KnobView.swift in Sources */,
 				5EBC44672A4EA2FB003A56F0 /* OnboardingAnimationVM.swift in Sources */,
 				5EF83AC32A7798870098CDF9 /* ChatScreenView.swift in Sources */,
 				5EE4492F2A77D78F002AD1B2 /* MessageBubble.swift in Sources */,
+				5E0A4F282A7C0F3300536EAD /* ImageListView.swift in Sources */,
 				5E3F31D12A4175170076487E /* ContentView.swift in Sources */,
+				5E0A4F1C2A7BCB7300536EAD /* CounterScreen.swift in Sources */,
+				5E0A4F2B2A7C0F8E00536EAD /* ImageListModel.swift in Sources */,
 				5E240C662A55803B0038520B /* HomeScreenView.swift in Sources */,
 				5ED764C82A668DFE0019DFC8 /* Pie.swift in Sources */,
 				5EF7E7332A77B0AA009E4C58 /* ChatScreenViewModel.swift in Sources */,
@@ -421,6 +484,7 @@
 				5E3F31CF2A4175170076487E /* GuideApp.swift in Sources */,
 				5ED764CB2A680A360019DFC8 /* EmojiArtView.swift in Sources */,
 				5ED764CD2A680A3F0019DFC8 /* EmojiArtViewModel.swift in Sources */,
+				5E0A4F2D2A7C0FF200536EAD /* ImageListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,7 +653,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -627,7 +691,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
