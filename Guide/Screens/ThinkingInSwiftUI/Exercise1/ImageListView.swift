@@ -19,7 +19,7 @@ struct ImageListView: View {
                     ScrollView{
                         ForEach(images){ image in
                             NavigationLink {
-                                ImageView(downloaded_url: URL(string:image.url)!)
+                                ImageView(downloaded_url: URL(string:image.download_url)!)
                             } label: {
                             HStack{
                                 Text(image.url)

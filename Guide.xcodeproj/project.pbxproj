@@ -142,6 +142,7 @@
 		5E0A4F252A7C0F1B00536EAD /* ThinkingInSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				5E0A4F302A7C384700536EAD /* Environment */,
 				5E0A4F262A7C0F2300536EAD /* Exercise1 */,
 			);
 			path = ThinkingInSwiftUI;
@@ -156,6 +157,13 @@
 				5E0A4F2E2A7C1D9D00536EAD /* ImageView.swift */,
 			);
 			path = Exercise1;
+			sourceTree = "<group>";
+		};
+		5E0A4F302A7C384700536EAD /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Environment;
 			sourceTree = "<group>";
 		};
 		5E1920272A41E5710073E844 /* Screens */ = {

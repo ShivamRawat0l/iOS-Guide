@@ -15,7 +15,8 @@ struct ContentView: View {
         }
         else{
             NavigationView{
-                ImageListView()
+                KnobView(angle: 0.0)
+                //ImageListView()
              //   ChatScreenView()
                 //HomeScreenView()
             }

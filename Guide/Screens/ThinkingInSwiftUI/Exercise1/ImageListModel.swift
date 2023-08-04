@@ -12,4 +12,5 @@ struct ImageList : Identifiable, Codable {
     var width: Int;
     var height: Int;
     var url: String;
+    var download_url : String ;
 }
