@@ -15,9 +15,15 @@ struct ContentView: View {
         }
         else{
             NavigationView{
-                KnobView(angle: 0.0)
+               // LineAnimation()
+                  AnimationModifier()
+                //   AnimationView()
+                // TableView()
+                //  CustomStack()
+                //   CustomLayout()
+                //        KnobView(angle: 0.0)
                 //ImageListView()
-             //   ChatScreenView()
+                //   ChatScreenView()
                 //HomeScreenView()
             }
         }
