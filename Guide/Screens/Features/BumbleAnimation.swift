@@ -8,18 +8,23 @@
 import SwiftUI
 
 struct CardView : View {
+    
      var DATA_COLLECTION = ["Hello", "Bye", "Another" , "First","Second","Third","Fourth","Fifth", "Sixth", "Seventh"]
     var COLORS : [Color] = [.green,.teal,.gray,.purple,.orange,.cyan,.blue ,.mint,.indigo,.yellow,.white]
     var OPACITY = [1,0.9,0.8, 0.7]
+    
     @State var offset = CGSize.zero
     @Binding var selectedIndex : Int ;
+    
     var index : Int ;
     var relativeIndex :  Int;
+    
     init(selectedIndex: Binding<Int> , index: Int) {
         self.index = index
         self._selectedIndex = selectedIndex
         self.relativeIndex =  index - selectedIndex.wrappedValue;
     }
+    
     var body : some View {
         RoundedRectangle(cornerRadius: 25.0)
             .fill(COLORS[index])
@@ -72,7 +77,6 @@ struct CardView : View {
 }
 
 struct BumbleAnimation: View {
-   
     @State var selectedIndex = 0
     
     var body: some View {
