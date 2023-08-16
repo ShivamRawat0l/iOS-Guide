@@ -59,7 +59,29 @@ extension AnyTransition {
     }
 }
 
+
 struct AnimationModifier: View {
+    @State var visible = false
+    
+    var body: some View {
+        VStack {
+            Button("Toggle") {
+                    self.visible.toggle()
+                
+            }
+            if visible {
+                Rectangle()
+                    .fill(Color.blue)
+                    .frame(width: 100, height: 100)
+                    .transition(.blur)
+            }
+        }.onAppear{
+            visible.toggle()
+        }.animation(.linear,value:visible)
+    }
+}
+
+struct AnimationModifier1: View {
     @State var taps : CGFloat = 0 ;
     @State var visible : Bool = true;
     var body: some View {

@@ -13,6 +13,7 @@ struct AnimationView: View {
     @State var loading : Bool = false;
     var body: some View{
         VStack {
+
             Image(systemName: "steeringwheel")
                 .rotationEffect(Angle(degrees: loading  ? 0 : 360 ), anchor: .center)
                 //.animation(.default.repeatForever(autoreverses: false))

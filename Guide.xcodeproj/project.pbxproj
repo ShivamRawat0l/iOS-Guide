@@ -15,6 +15,7 @@
 		5E0A4F2F2A7C1D9D00536EAD /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A4F2E2A7C1D9D00536EAD /* ImageView.swift */; };
 		5E19202B2A41E5C10073E844 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E19202A2A41E5C10073E844 /* OnboardingView.swift */; };
 		5E1920302A41EBFD0073E844 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E19202F2A41EBFD0073E844 /* Constants.swift */; };
+		5E192E952A8C6DD500DD13BC /* BumbleAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E192E942A8C6DD500DD13BC /* BumbleAnimation.swift */; };
 		5E240C662A55803B0038520B /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E240C652A55803B0038520B /* HomeScreenView.swift */; };
 		5E3F31CF2A4175170076487E /* GuideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3F31CE2A4175170076487E /* GuideApp.swift */; };
 		5E3F31D12A4175170076487E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3F31D02A4175170076487E /* ContentView.swift */; };
@@ -33,6 +34,15 @@
 		5E9013A82A5828390025EDCA /* PairGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9013A72A5828390025EDCA /* PairGameViewModel.swift */; };
 		5EBC44642A4E7E01003A56F0 /* AnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBC44632A4E7E01003A56F0 /* AnimationHelper.swift */; };
 		5EBC44672A4EA2FB003A56F0 /* OnboardingAnimationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBC44662A4EA2FB003A56F0 /* OnboardingAnimationVM.swift */; };
+		5ED5B9282A84F31300558CBC /* KeyboardAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5B9272A84F31300558CBC /* KeyboardAware.swift */; };
+		5ED5B92B2A850E1000558CBC /* CustomModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5B92A2A850E1000558CBC /* CustomModifier.swift */; };
+		5ED5B92D2A85636700558CBC /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5B92C2A85636700558CBC /* NavigationController.swift */; };
+		5ED5B9302A85638600558CBC /* GreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5B92F2A85638600558CBC /* GreenView.swift */; };
+		5ED5B9332A8563B300558CBC /* BlueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5B9322A8563B300558CBC /* BlueView.swift */; };
+		5ED5B9362A856B7700558CBC /* OrangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5B9352A856B7700558CBC /* OrangeView.swift */; };
+		5ED5B9382A85E57900558CBC /* SafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5B9372A85E57900558CBC /* SafeArea.swift */; };
+		5ED5B93A2A85FA7500558CBC /* WalletAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5B9392A85FA7500558CBC /* WalletAnimation.swift */; };
+		5ED5B93C2A865A3700558CBC /* TabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5B93B2A865A3700558CBC /* TabScreen.swift */; };
 		5ED764C82A668DFE0019DFC8 /* Pie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED764C72A668DFE0019DFC8 /* Pie.swift */; };
 		5ED764CB2A680A360019DFC8 /* EmojiArtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED764CA2A680A360019DFC8 /* EmojiArtView.swift */; };
 		5ED764CD2A680A3F0019DFC8 /* EmojiArtViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED764CC2A680A3F0019DFC8 /* EmojiArtViewModel.swift */; };
@@ -73,6 +83,7 @@
 		5E0A4F2E2A7C1D9D00536EAD /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		5E19202A2A41E5C10073E844 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		5E19202F2A41EBFD0073E844 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5E192E942A8C6DD500DD13BC /* BumbleAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BumbleAnimation.swift; sourceTree = "<group>"; };
 		5E240C652A55803B0038520B /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
 		5E3F31CB2A4175170076487E /* Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E3F31CE2A4175170076487E /* GuideApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideApp.swift; sourceTree = "<group>"; };
@@ -95,6 +106,15 @@
 		5E9013A72A5828390025EDCA /* PairGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairGameViewModel.swift; sourceTree = "<group>"; };
 		5EBC44632A4E7E01003A56F0 /* AnimationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationHelper.swift; sourceTree = "<group>"; };
 		5EBC44662A4EA2FB003A56F0 /* OnboardingAnimationVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingAnimationVM.swift; sourceTree = "<group>"; };
+		5ED5B9272A84F31300558CBC /* KeyboardAware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAware.swift; sourceTree = "<group>"; };
+		5ED5B92A2A850E1000558CBC /* CustomModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifier.swift; sourceTree = "<group>"; };
+		5ED5B92C2A85636700558CBC /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		5ED5B92F2A85638600558CBC /* GreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenView.swift; sourceTree = "<group>"; };
+		5ED5B9322A8563B300558CBC /* BlueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueView.swift; sourceTree = "<group>"; };
+		5ED5B9352A856B7700558CBC /* OrangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeView.swift; sourceTree = "<group>"; };
+		5ED5B9372A85E57900558CBC /* SafeArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeArea.swift; sourceTree = "<group>"; };
+		5ED5B9392A85FA7500558CBC /* WalletAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletAnimation.swift; sourceTree = "<group>"; };
+		5ED5B93B2A865A3700558CBC /* TabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabScreen.swift; sourceTree = "<group>"; };
 		5ED764C72A668DFE0019DFC8 /* Pie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pie.swift; sourceTree = "<group>"; };
 		5ED764CA2A680A360019DFC8 /* EmojiArtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiArtView.swift; sourceTree = "<group>"; };
 		5ED764CC2A680A3F0019DFC8 /* EmojiArtViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiArtViewModel.swift; sourceTree = "<group>"; };
@@ -160,7 +180,7 @@
 		5E0A4F252A7C0F1B00536EAD /* ThinkingInSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				5EDE2DFB2A834EC300EE2115 /* Exercise 6 */,
+				5EDE2DFB2A834EC300EE2115 /* Exercise6 */,
 				5EDE2DF62A82BC2900EE2115 /* Animations */,
 				5E7B27A92A80AB6F009F708D /* CustomLayouts */,
 				5E7B27A62A80201A009F708D /* Exercise3 */,
@@ -191,6 +211,8 @@
 		5E1920272A41E5710073E844 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				5ED5B9292A850E0000558CBC /* SwiftUITutorial */,
+				5ED5B9262A84F30700558CBC /* Features */,
 				5E0A4F252A7C0F1B00536EAD /* ThinkingInSwiftUI */,
 				5E0A4F222A7BFE8C00536EAD /* Testing */,
 				5E0A4F1D2A7BDECA00536EAD /* QuestionScreen */,
@@ -344,6 +366,46 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		5ED5B9262A84F30700558CBC /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				5ED5B9272A84F31300558CBC /* KeyboardAware.swift */,
+				5ED5B92E2A85636C00558CBC /* Navigation */,
+				5ED5B9392A85FA7500558CBC /* WalletAnimation.swift */,
+				5ED5B93B2A865A3700558CBC /* TabScreen.swift */,
+				5E192E942A8C6DD500DD13BC /* BumbleAnimation.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		5ED5B9292A850E0000558CBC /* SwiftUITutorial */ = {
+			isa = PBXGroup;
+			children = (
+				5ED5B92A2A850E1000558CBC /* CustomModifier.swift */,
+			);
+			path = SwiftUITutorial;
+			sourceTree = "<group>";
+		};
+		5ED5B92E2A85636C00558CBC /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				5ED5B9312A85638A00558CBC /* Screens */,
+				5ED5B92C2A85636700558CBC /* NavigationController.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		5ED5B9312A85638A00558CBC /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				5ED5B92F2A85638600558CBC /* GreenView.swift */,
+				5ED5B9322A8563B300558CBC /* BlueView.swift */,
+				5ED5B9352A856B7700558CBC /* OrangeView.swift */,
+				5ED5B9372A85E57900558CBC /* SafeArea.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		5ED764C92A680A260019DFC8 /* EmojiArt */ = {
 			isa = PBXGroup;
 			children = (
@@ -363,13 +425,13 @@
 			path = Animations;
 			sourceTree = "<group>";
 		};
-		5EDE2DFB2A834EC300EE2115 /* Exercise 6 */ = {
+		5EDE2DFB2A834EC300EE2115 /* Exercise6 */ = {
 			isa = PBXGroup;
 			children = (
 				5EDE2DFC2A834ED400EE2115 /* BounceAnimation.swift */,
 				5EDE2DFE2A83525E00EE2115 /* LineAnimation.swift */,
 			);
-			path = "Exercise 6";
+			path = Exercise6;
 			sourceTree = "<group>";
 		};
 		5EE4492D2A77D781002AD1B2 /* Helper */ = {
@@ -529,26 +591,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E0A4F2F2A7C1D9D00536EAD /* ImageView.swift in Sources */,
+				5ED5B92B2A850E1000558CBC /* CustomModifier.swift in Sources */,
 				5EDE2DFA2A833AA000EE2115 /* AnimationModifier.swift in Sources */,
 				5E1920302A41EBFD0073E844 /* Constants.swift in Sources */,
+				5ED5B9282A84F31300558CBC /* KeyboardAware.swift in Sources */,
 				5EF7E7312A77B02E009E4C58 /* ChatScreenModel.swift in Sources */,
 				5E19202B2A41E5C10073E844 /* OnboardingView.swift in Sources */,
 				5E9013A82A5828390025EDCA /* PairGameViewModel.swift in Sources */,
 				5EBC44642A4E7E01003A56F0 /* AnimationHelper.swift in Sources */,
+				5ED5B9382A85E57900558CBC /* SafeArea.swift in Sources */,
 				5E9013A62A58282C0025EDCA /* PairGameModel.swift in Sources */,
 				5EDE2DFF2A83525E00EE2115 /* LineAnimation.swift in Sources */,
 				5E0A4F242A7BFE9A00536EAD /* KnobView.swift in Sources */,
 				5E7B27B12A82586F009F708D /* TableView.swift in Sources */,
+				5ED5B92D2A85636700558CBC /* NavigationController.swift in Sources */,
 				5EBC44672A4EA2FB003A56F0 /* OnboardingAnimationVM.swift in Sources */,
+				5ED5B93A2A85FA7500558CBC /* WalletAnimation.swift in Sources */,
 				5EF83AC32A7798870098CDF9 /* ChatScreenView.swift in Sources */,
 				5EDE2DFD2A834ED400EE2115 /* BounceAnimation.swift in Sources */,
 				5EE4492F2A77D78F002AD1B2 /* MessageBubble.swift in Sources */,
+				5ED5B9332A8563B300558CBC /* BlueView.swift in Sources */,
 				5E0A4F282A7C0F3300536EAD /* ImageListView.swift in Sources */,
 				5E3F31D12A4175170076487E /* ContentView.swift in Sources */,
+				5ED5B93C2A865A3700558CBC /* TabScreen.swift in Sources */,
 				5E0A4F1C2A7BCB7300536EAD /* CounterScreen.swift in Sources */,
 				5E0A4F2B2A7C0F8E00536EAD /* ImageListModel.swift in Sources */,
+				5E192E952A8C6DD500DD13BC /* BumbleAnimation.swift in Sources */,
 				5E240C662A55803B0038520B /* HomeScreenView.swift in Sources */,
 				5ED764C82A668DFE0019DFC8 /* Pie.swift in Sources */,
+				5ED5B9362A856B7700558CBC /* OrangeView.swift in Sources */,
 				5E7B27AF2A81F133009F708D /* CustomStack.swift in Sources */,
 				5E7B27A82A802029009F708D /* LayoutView.swift in Sources */,
 				5EF7E7332A77B0AA009E4C58 /* ChatScreenViewModel.swift in Sources */,
@@ -557,6 +628,7 @@
 				5ED764CF2A680A480019DFC8 /* EmojiArtModel.swift in Sources */,
 				5E3F31CF2A4175170076487E /* GuideApp.swift in Sources */,
 				5ED764CB2A680A360019DFC8 /* EmojiArtView.swift in Sources */,
+				5ED5B9302A85638600558CBC /* GreenView.swift in Sources */,
 				5ED764CD2A680A3F0019DFC8 /* EmojiArtViewModel.swift in Sources */,
 				5E7B27AB2A80AB7E009F708D /* CustomLayout.swift in Sources */,
 				5E0A4F2D2A7C0FF200536EAD /* ImageListController.swift in Sources */,

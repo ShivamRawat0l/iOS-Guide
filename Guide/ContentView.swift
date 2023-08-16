@@ -15,8 +15,11 @@ struct ContentView: View {
         }
         else{
             NavigationView{
-               // LineAnimation()
-                  AnimationModifier()
+                BumbleAnimation()
+               // NavigationController()
+                // KeyboardAware()
+                // LineAnimation()
+               //   AnimationModifier()
                 //   AnimationView()
                 // TableView()
                 //  CustomStack()
