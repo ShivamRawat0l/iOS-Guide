@@ -15,7 +15,8 @@ struct ContentView: View {
         }
         else{
             NavigationView{
-                BumbleAnimation()
+                FlickerImage()
+                //  BumbleAnimation()
                // NavigationController()
                 // KeyboardAware()
                 // LineAnimation()

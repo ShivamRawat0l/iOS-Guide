@@ -24,6 +24,12 @@
 		5E3F31E12A4175180076487E /* GuideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3F31E02A4175180076487E /* GuideTests.swift */; };
 		5E3F31EB2A4175180076487E /* GuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3F31EA2A4175180076487E /* GuideUITests.swift */; };
 		5E3F31ED2A4175180076487E /* GuideUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3F31EC2A4175180076487E /* GuideUITestsLaunchTests.swift */; };
+		5E4397982AA107FA00B88F98 /* ImageSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4397972AA107FA00B88F98 /* ImageSearchView.swift */; };
+		5E43979A2AA1080E00B88F98 /* ImageSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4397992AA1080E00B88F98 /* ImageSearchModel.swift */; };
+		5E43979F2AA1088900B88F98 /* ImageSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E43979E2AA1088900B88F98 /* ImageSearchViewController.swift */; };
+		5E4397A12AA1089700B88F98 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4397A02AA1089700B88F98 /* NetworkService.swift */; };
+		5E44108B2AA5A41B00781FEF /* FlickerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E44108A2AA5A41B00781FEF /* FlickerAPI.swift */; };
+		5E5999012A8DE216001EF7DE /* TabAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5999002A8DE216001EF7DE /* TabAnimation.swift */; };
 		5E7B27A82A802029009F708D /* LayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B27A72A802029009F708D /* LayoutView.swift */; };
 		5E7B27AB2A80AB7E009F708D /* CustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B27AA2A80AB7E009F708D /* CustomLayout.swift */; };
 		5E7B27AD2A815CBE009F708D /* AnchorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B27AC2A815CBE009F708D /* AnchorView.swift */; };
@@ -96,6 +102,12 @@
 		5E3F31E62A4175180076487E /* GuideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuideUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E3F31EA2A4175180076487E /* GuideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideUITests.swift; sourceTree = "<group>"; };
 		5E3F31EC2A4175180076487E /* GuideUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5E4397972AA107FA00B88F98 /* ImageSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchView.swift; sourceTree = "<group>"; };
+		5E4397992AA1080E00B88F98 /* ImageSearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchModel.swift; sourceTree = "<group>"; };
+		5E43979E2AA1088900B88F98 /* ImageSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchViewController.swift; sourceTree = "<group>"; };
+		5E4397A02AA1089700B88F98 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		5E44108A2AA5A41B00781FEF /* FlickerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerAPI.swift; sourceTree = "<group>"; };
+		5E5999002A8DE216001EF7DE /* TabAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabAnimation.swift; sourceTree = "<group>"; };
 		5E7B27A72A802029009F708D /* LayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutView.swift; sourceTree = "<group>"; };
 		5E7B27AA2A80AB7E009F708D /* CustomLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayout.swift; sourceTree = "<group>"; };
 		5E7B27AC2A815CBE009F708D /* AnchorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorView.swift; sourceTree = "<group>"; };
@@ -211,6 +223,7 @@
 		5E1920272A41E5710073E844 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				5E4397962AA107E600B88F98 /* Flickr */,
 				5ED5B9292A850E0000558CBC /* SwiftUITutorial */,
 				5ED5B9262A84F30700558CBC /* Features */,
 				5E0A4F252A7C0F1B00536EAD /* ThinkingInSwiftUI */,
@@ -328,6 +341,58 @@
 			path = GuideUITests;
 			sourceTree = "<group>";
 		};
+		5E4397962AA107E600B88F98 /* Flickr */ = {
+			isa = PBXGroup;
+			children = (
+				5E43979C2AA1081C00B88F98 /* Screens */,
+				5E43979B2AA1081400B88F98 /*  Utils */,
+			);
+			path = Flickr;
+			sourceTree = "<group>";
+		};
+		5E43979B2AA1081400B88F98 /*  Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5E4397A02AA1089700B88F98 /* NetworkService.swift */,
+			);
+			path = " Utils";
+			sourceTree = "<group>";
+		};
+		5E43979C2AA1081C00B88F98 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				5E4410892AA5A41000781FEF /* API */,
+				5E43979D2AA1082700B88F98 /* ImageSearch */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		5E43979D2AA1082700B88F98 /* ImageSearch */ = {
+			isa = PBXGroup;
+			children = (
+				5E4397972AA107FA00B88F98 /* ImageSearchView.swift */,
+				5E43979E2AA1088900B88F98 /* ImageSearchViewController.swift */,
+				5E4397992AA1080E00B88F98 /* ImageSearchModel.swift */,
+			);
+			path = ImageSearch;
+			sourceTree = "<group>";
+		};
+		5E4410892AA5A41000781FEF /* API */ = {
+			isa = PBXGroup;
+			children = (
+				5E44108A2AA5A41B00781FEF /* FlickerAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		5E5998FF2A8DE203001EF7DE /* TabAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				5E5999002A8DE216001EF7DE /* TabAnimation.swift */,
+			);
+			path = TabAnimation;
+			sourceTree = "<group>";
+		};
 		5E7B27A62A80201A009F708D /* Exercise3 */ = {
 			isa = PBXGroup;
 			children = (
@@ -369,6 +434,7 @@
 		5ED5B9262A84F30700558CBC /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				5E5998FF2A8DE203001EF7DE /* TabAnimation */,
 				5ED5B9272A84F31300558CBC /* KeyboardAware.swift */,
 				5ED5B92E2A85636C00558CBC /* Navigation */,
 				5ED5B9392A85FA7500558CBC /* WalletAnimation.swift */,
@@ -600,6 +666,7 @@
 				5E9013A82A5828390025EDCA /* PairGameViewModel.swift in Sources */,
 				5EBC44642A4E7E01003A56F0 /* AnimationHelper.swift in Sources */,
 				5ED5B9382A85E57900558CBC /* SafeArea.swift in Sources */,
+				5E4397A12AA1089700B88F98 /* NetworkService.swift in Sources */,
 				5E9013A62A58282C0025EDCA /* PairGameModel.swift in Sources */,
 				5EDE2DFF2A83525E00EE2115 /* LineAnimation.swift in Sources */,
 				5E0A4F242A7BFE9A00536EAD /* KnobView.swift in Sources */,
@@ -607,6 +674,7 @@
 				5ED5B92D2A85636700558CBC /* NavigationController.swift in Sources */,
 				5EBC44672A4EA2FB003A56F0 /* OnboardingAnimationVM.swift in Sources */,
 				5ED5B93A2A85FA7500558CBC /* WalletAnimation.swift in Sources */,
+				5E44108B2AA5A41B00781FEF /* FlickerAPI.swift in Sources */,
 				5EF83AC32A7798870098CDF9 /* ChatScreenView.swift in Sources */,
 				5EDE2DFD2A834ED400EE2115 /* BounceAnimation.swift in Sources */,
 				5EE4492F2A77D78F002AD1B2 /* MessageBubble.swift in Sources */,
@@ -614,6 +682,7 @@
 				5E0A4F282A7C0F3300536EAD /* ImageListView.swift in Sources */,
 				5E3F31D12A4175170076487E /* ContentView.swift in Sources */,
 				5ED5B93C2A865A3700558CBC /* TabScreen.swift in Sources */,
+				5E5999012A8DE216001EF7DE /* TabAnimation.swift in Sources */,
 				5E0A4F1C2A7BCB7300536EAD /* CounterScreen.swift in Sources */,
 				5E0A4F2B2A7C0F8E00536EAD /* ImageListModel.swift in Sources */,
 				5E192E952A8C6DD500DD13BC /* BumbleAnimation.swift in Sources */,
@@ -630,8 +699,11 @@
 				5ED764CB2A680A360019DFC8 /* EmojiArtView.swift in Sources */,
 				5ED5B9302A85638600558CBC /* GreenView.swift in Sources */,
 				5ED764CD2A680A3F0019DFC8 /* EmojiArtViewModel.swift in Sources */,
+				5E43979F2AA1088900B88F98 /* ImageSearchViewController.swift in Sources */,
+				5E43979A2AA1080E00B88F98 /* ImageSearchModel.swift in Sources */,
 				5E7B27AB2A80AB7E009F708D /* CustomLayout.swift in Sources */,
 				5E0A4F2D2A7C0FF200536EAD /* ImageListController.swift in Sources */,
+				5E4397982AA107FA00B88F98 /* ImageSearchView.swift in Sources */,
 				5E7B27AD2A815CBE009F708D /* AnchorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
