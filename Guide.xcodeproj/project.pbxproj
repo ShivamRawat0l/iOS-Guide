@@ -344,6 +344,7 @@
 		5E4397962AA107E600B88F98 /* Flickr */ = {
 			isa = PBXGroup;
 			children = (
+				5E4410892AA5A41000781FEF /* API */,
 				5E43979C2AA1081C00B88F98 /* Screens */,
 				5E43979B2AA1081400B88F98 /*  Utils */,
 			);
@@ -361,7 +362,6 @@
 		5E43979C2AA1081C00B88F98 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				5E4410892AA5A41000781FEF /* API */,
 				5E43979D2AA1082700B88F98 /* ImageSearch */,
 			);
 			path = Screens;
