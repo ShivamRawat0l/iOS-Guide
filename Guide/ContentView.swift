@@ -9,13 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     @AppStorage("onboardingComplete") var onboardingComplete = false;
+    let store = FlickerStore()
     var body: some View {
         if false{
             OnboardingView()
         }
         else{
             NavigationView{
-                FlickerImage()
+                FlickerImageRedux()
+                    .environmentObject(store)
+                //FlickerImage()
                 //  BumbleAnimation()
                // NavigationController()
                 // KeyboardAware()

@@ -40,21 +40,22 @@ fileprivate struct ImagesearchDetail : View {
 }
 
 fileprivate struct ImageSearch: View {
+    @EnvironmentObject var flickerStore : FlickerStore ;
     @State var searchText : String = "";
     var ns : Namespace.ID;
-    var imageSearchVC : ImageSearchViewController ;
     var onPressImage : (_ url : String, _ name : String ) -> Void ;
     
     var body: some View {
         VStack {
             HStack {
+                Text("Redux")
                 TextField("Seach Image", text: $searchText)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .font(.system(size: 18))
                     .padding()
                 Button {
                     Task{
-                        await imageSearchVC.fetchImages(searchText : searchText);
+                        await flickerStore.dispatch(Action.fetch(searchText))
                     }
                 } label : {
                     Image(systemName: "play")
@@ -63,7 +64,7 @@ fileprivate struct ImageSearch: View {
             .padding()
             ScrollView {
                 VStack {
-                    ForEach(imageSearchVC.imageSearchModel.images, id: \.0) { image in
+                    ForEach(flickerStore.state.images, id: \.0) { image in
                         VStack {
                             AsyncImage(url: URL(string: image.1) , content:  { phase
                                 in
@@ -96,15 +97,15 @@ fileprivate struct ImageSearch: View {
     }
 }
 
-struct FlickerImage : View {
+struct FlickerImageRedux : View {
     @State var imageURL : String?;
     @State var imageID : String?;
     @Namespace var ns ;
     
-    @StateObject var imageSearchVC  = ImageSearchViewController()
+    @EnvironmentObject var flickerStore : FlickerStore;
     var body : some View {
         ZStack {
-            ImageSearch(ns: ns , imageSearchVC : imageSearchVC,onPressImage: { image, id in
+            ImageSearch(ns: ns ,onPressImage: { image, id in
                 imageID = id;
                 withAnimation{
                     imageURL = image;
@@ -127,7 +128,7 @@ struct FlickerImage : View {
     @Namespace var ns;
     @StateObject var imageSearchVC  = ImageSearchViewController()
     
-    return ImageSearch(ns : ns , imageSearchVC : imageSearchVC, onPressImage:  {image , id  in
+    return ImageSearch(ns : ns ,  onPressImage:  {image , id  in
         print(image)
         print(id)
     })

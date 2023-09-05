@@ -29,6 +29,8 @@
 		5E43979F2AA1088900B88F98 /* ImageSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E43979E2AA1088900B88F98 /* ImageSearchViewController.swift */; };
 		5E4397A12AA1089700B88F98 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4397A02AA1089700B88F98 /* NetworkService.swift */; };
 		5E44108B2AA5A41B00781FEF /* FlickerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E44108A2AA5A41B00781FEF /* FlickerAPI.swift */; };
+		5E44108F2AA65CEC00781FEF /* ImageSearchViewR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E44108E2AA65CEC00781FEF /* ImageSearchViewR.swift */; };
+		5E4410922AA65D4500781FEF /* FlickerStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4410912AA65D4500781FEF /* FlickerStore.swift */; };
 		5E5999012A8DE216001EF7DE /* TabAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5999002A8DE216001EF7DE /* TabAnimation.swift */; };
 		5E7B27A82A802029009F708D /* LayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B27A72A802029009F708D /* LayoutView.swift */; };
 		5E7B27AB2A80AB7E009F708D /* CustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B27AA2A80AB7E009F708D /* CustomLayout.swift */; };
@@ -107,6 +109,8 @@
 		5E43979E2AA1088900B88F98 /* ImageSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchViewController.swift; sourceTree = "<group>"; };
 		5E4397A02AA1089700B88F98 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		5E44108A2AA5A41B00781FEF /* FlickerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerAPI.swift; sourceTree = "<group>"; };
+		5E44108E2AA65CEC00781FEF /* ImageSearchViewR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchViewR.swift; sourceTree = "<group>"; };
+		5E4410912AA65D4500781FEF /* FlickerStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerStore.swift; sourceTree = "<group>"; };
 		5E5999002A8DE216001EF7DE /* TabAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabAnimation.swift; sourceTree = "<group>"; };
 		5E7B27A72A802029009F708D /* LayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutView.swift; sourceTree = "<group>"; };
 		5E7B27AA2A80AB7E009F708D /* CustomLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayout.swift; sourceTree = "<group>"; };
@@ -223,6 +227,7 @@
 		5E1920272A41E5710073E844 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				5E44108C2AA65C7800781FEF /* FlickrRedux */,
 				5E4397962AA107E600B88F98 /* Flickr */,
 				5ED5B9292A850E0000558CBC /* SwiftUITutorial */,
 				5ED5B9262A84F30700558CBC /* Features */,
@@ -383,6 +388,31 @@
 				5E44108A2AA5A41B00781FEF /* FlickerAPI.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		5E44108C2AA65C7800781FEF /* FlickrRedux */ = {
+			isa = PBXGroup;
+			children = (
+				5E4410902AA65D1C00781FEF /* Store */,
+				5E44108D2AA65CDA00781FEF /* Screens */,
+			);
+			path = FlickrRedux;
+			sourceTree = "<group>";
+		};
+		5E44108D2AA65CDA00781FEF /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				5E44108E2AA65CEC00781FEF /* ImageSearchViewR.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		5E4410902AA65D1C00781FEF /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				5E4410912AA65D4500781FEF /* FlickerStore.swift */,
+			);
+			path = Store;
 			sourceTree = "<group>";
 		};
 		5E5998FF2A8DE203001EF7DE /* TabAnimation */ = {
@@ -670,9 +700,11 @@
 				5E9013A62A58282C0025EDCA /* PairGameModel.swift in Sources */,
 				5EDE2DFF2A83525E00EE2115 /* LineAnimation.swift in Sources */,
 				5E0A4F242A7BFE9A00536EAD /* KnobView.swift in Sources */,
+				5E44108F2AA65CEC00781FEF /* ImageSearchViewR.swift in Sources */,
 				5E7B27B12A82586F009F708D /* TableView.swift in Sources */,
 				5ED5B92D2A85636700558CBC /* NavigationController.swift in Sources */,
 				5EBC44672A4EA2FB003A56F0 /* OnboardingAnimationVM.swift in Sources */,
+				5E4410922AA65D4500781FEF /* FlickerStore.swift in Sources */,
 				5ED5B93A2A85FA7500558CBC /* WalletAnimation.swift in Sources */,
 				5E44108B2AA5A41B00781FEF /* FlickerAPI.swift in Sources */,
 				5EF83AC32A7798870098CDF9 /* ChatScreenView.swift in Sources */,
