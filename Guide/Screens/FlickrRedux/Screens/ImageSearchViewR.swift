@@ -126,7 +126,6 @@ struct FlickerImageRedux : View {
 
 #Preview {
     @Namespace var ns;
-    @StateObject var imageSearchVC  = ImageSearchViewController()
     
     return ImageSearch(ns : ns ,  onPressImage:  {image , id  in
         print(image)

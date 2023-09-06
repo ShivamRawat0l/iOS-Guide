@@ -11,28 +11,23 @@ struct ContentView: View {
     @AppStorage("onboardingComplete") var onboardingComplete = false;
     let store = FlickerStore()
     var body: some View {
-        if false{
-            OnboardingView()
-        }
-        else{
-            NavigationView{
-                FlickerImageRedux()
-                    .environmentObject(store)
-                //FlickerImage()
-                //  BumbleAnimation()
-               // NavigationController()
-                // KeyboardAware()
-                // LineAnimation()
-               //   AnimationModifier()
-                //   AnimationView()
-                // TableView()
-                //  CustomStack()
-                //   CustomLayout()
-                //        KnobView(angle: 0.0)
-                //ImageListView()
-                //   ChatScreenView()
-                //HomeScreenView()
-            }
+        NavigationView{
+            FlickerImageRedux()
+                .environmentObject(store)
+            //FlickerImage()
+            //  BumbleAnimation()
+            // NavigationController()
+            // KeyboardAware()
+            // LineAnimation()
+            //   AnimationModifier()
+            //   AnimationView()
+            // TableView()
+            //  CustomStack()
+            //   CustomLayout()
+            //        KnobView(angle: 0.0)
+            //ImageListView()
+            //   ChatScreenView()
+            //HomeScreenView()
         }
     }
 }
