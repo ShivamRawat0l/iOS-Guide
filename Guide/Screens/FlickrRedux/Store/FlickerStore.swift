@@ -16,12 +16,10 @@ enum Action {
 }
 
  struct Reducer {
-  
-    
     func update (_ state : inout AppState , _ action : Action) async {
         switch action {
         case .fetch(let searchText) :
-            let data : FlickerClass? = await NetworkService.fetchJSON(url: FlickerAPI.searchAPI(searchText: searchText))
+            let data : FlickerClass? = await NetworkService.fetchJSON(url: FlickerAPI.searchAPI(searchText: searchText),type: FlickerClass.self)
             guard let data else {
                 print("Error Occurred while parsing images")
                 return

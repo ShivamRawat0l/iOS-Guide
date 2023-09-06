@@ -8,14 +8,12 @@
 import SwiftUI
 
 fileprivate struct ImagesearchDetail : View {
-    var imageURL : String;
-    var imageID : String;
     var ns : Namespace.ID;
-    var onPressImage : () -> Void ;
+    @StateObject var imageSearchVC : ImageSearchViewController ;
     
     var body : some View {
         VStack {
-            AsyncImage(url: URL(string: imageURL) , content:  { image in
+            AsyncImage(url: URL(string: imageSearchVC.imageURL ?? "") , content:  { image in
                 image
                     .resizable()
                     .aspectRatio(contentMode: .fit)
@@ -23,12 +21,14 @@ fileprivate struct ImagesearchDetail : View {
             }, placeholder:  {
                 ProgressView()
             })
-            .matchedGeometryEffect(id: "image\(imageID)", in: ns)
+            .matchedGeometryEffect(id: "image\(imageSearchVC.imageID ?? "")", in: ns)
             .onTapGesture {
-                onPressImage();
+                withAnimation {
+                    imageSearchVC.imageURL = nil;
+                }
             }
             VStack {
-                Text("\(imageID)")
+                Text("\(imageSearchVC.imageID ?? "")")
                     .font(.system(size: 20))
                     .bold()
                     .multilineTextAlignment(.center)
@@ -42,8 +42,7 @@ fileprivate struct ImagesearchDetail : View {
 fileprivate struct ImageSearch: View {
     @State var searchText : String = "";
     var ns : Namespace.ID;
-    var imageSearchVC : ImageSearchViewController ;
-    var onPressImage : (_ url : String, _ name : String ) -> Void ;
+    @StateObject var imageSearchVC : ImageSearchViewController ;
     
     var body: some View {
         VStack {
@@ -63,7 +62,7 @@ fileprivate struct ImageSearch: View {
             .padding()
             ScrollView {
                 VStack {
-                    ForEach(imageSearchVC.imageSearchModel.images, id: \.0) { image in
+                    ForEach(imageSearchVC.images, id: \.0) { image in
                         VStack {
                             AsyncImage(url: URL(string: image.1) , content:  { phase
                                 in
@@ -85,7 +84,10 @@ fileprivate struct ImageSearch: View {
                             })
                             .matchedGeometryEffect(id: "image\(image.0)", in: ns)
                             .onTapGesture {
-                                onPressImage(image.1,image.0);
+                                imageSearchVC.imageID = image.0;
+                                withAnimation{
+                                    imageSearchVC.imageURL = image.1;
+                                }
                             }
                         }
                     }
@@ -97,27 +99,16 @@ fileprivate struct ImageSearch: View {
 }
 
 struct FlickerImage : View {
-    @State var imageURL : String?;
-    @State var imageID : String?;
-    @Namespace var ns ;
-    
+    @Namespace var ns
     @StateObject var imageSearchVC  = ImageSearchViewController()
+    
     var body : some View {
         ZStack {
-            ImageSearch(ns: ns , imageSearchVC : imageSearchVC,onPressImage: { image, id in
-                imageID = id;
-                withAnimation{
-                    imageURL = image;
-                }
-            })
-            .opacity(imageURL == nil ? 1 : 0 )
-            if let imageURL,let imageID {
-                ImagesearchDetail(imageURL: imageURL, imageID: imageID,  ns: ns , onPressImage : {
-                    withAnimation {
-                        self.imageURL = nil;
-                        self.imageID = nil;
-                    }
-                })
+            ImageSearch(ns: ns , imageSearchVC : imageSearchVC)
+                .opacity(imageSearchVC.imageURL != nil ? 0 : 1)
+            if let _ = imageSearchVC.imageURL,
+               let _ =  imageSearchVC.imageID {
+                ImagesearchDetail(ns: ns, imageSearchVC : imageSearchVC )
             }
         }
     }
@@ -127,8 +118,5 @@ struct FlickerImage : View {
     @Namespace var ns;
     @StateObject var imageSearchVC  = ImageSearchViewController()
     
-    return ImageSearch(ns : ns , imageSearchVC : imageSearchVC, onPressImage:  {image , id  in
-        print(image)
-        print(id)
-    })
+    return ImageSearch(ns : ns , imageSearchVC : imageSearchVC)
 }

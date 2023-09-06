@@ -7,17 +7,20 @@
 
 import Foundation
 
-struct ImageSearchModel  {
-    var images : [(String,String)] = [];
-    
-    mutating func searchImages(searchText : String ) async {
-        let data : FlickerClass? = await NetworkService.fetchJSON(url: FlickerAPI.searchAPI(searchText: searchText))
-        guard let data else {
-            print("Error Occurred while parsing images")
-            return
-        }
-        self.images = data.photos.photo.map { photo in
-            (photo.title, FlickerAPI.createPhotoURL(server: photo.server, id: photo.id, secret: photo.secret))
-        }
+struct FlickerClass : Codable{
+    struct Photo : Codable {
+        var id : String;
+        var owner : String;
+        var title : String ;
+        var secret : String ;
+        var server : String ;
     }
+    struct Photos : Codable{
+        var page : Int;
+        var pages :Int;
+        var perpage : Int;
+        var total : Int ;
+        var photo : [Photo];
+    }
+    var photos : Photos;
 }
