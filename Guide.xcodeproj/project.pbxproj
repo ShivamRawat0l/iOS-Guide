@@ -17,6 +17,8 @@
 		5E3F31ED2A4175180076487E /* GuideUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3F31EC2A4175180076487E /* GuideUITestsLaunchTests.swift */; };
 		5E44108F2AA65CEC00781FEF /* ImageSearchViewR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E44108E2AA65CEC00781FEF /* ImageSearchViewR.swift */; };
 		5E4410922AA65D4500781FEF /* FlickerStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4410912AA65D4500781FEF /* FlickerStore.swift */; };
+		5E4410D82AA8553600781FEF /* FlickerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4410D72AA8553600781FEF /* FlickerAPI.swift */; };
+		5E4410DB2AA8554E00781FEF /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4410DA2AA8554E00781FEF /* NetworkServices.swift */; };
 		5EBC44642A4E7E01003A56F0 /* AnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBC44632A4E7E01003A56F0 /* AnimationHelper.swift */; };
 		5EE4492F2A77D78F002AD1B2 /* MessageBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE4492E2A77D78F002AD1B2 /* MessageBubble.swift */; };
 /* End PBXBuildFile section */
@@ -53,6 +55,8 @@
 		5E3F31EC2A4175180076487E /* GuideUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5E44108E2AA65CEC00781FEF /* ImageSearchViewR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchViewR.swift; sourceTree = "<group>"; };
 		5E4410912AA65D4500781FEF /* FlickerStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerStore.swift; sourceTree = "<group>"; };
+		5E4410D72AA8553600781FEF /* FlickerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerAPI.swift; sourceTree = "<group>"; };
+		5E4410DA2AA8554E00781FEF /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
 		5EBC44632A4E7E01003A56F0 /* AnimationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationHelper.swift; sourceTree = "<group>"; };
 		5EE4492E2A77D78F002AD1B2 /* MessageBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -178,6 +182,7 @@
 		5E44108C2AA65C7800781FEF /* FlickrRedux */ = {
 			isa = PBXGroup;
 			children = (
+				5E4410D92AA8553F00781FEF /* Services */,
 				5E4410D62AA854C600781FEF /* API */,
 				5E4410902AA65D1C00781FEF /* Store */,
 				5E44108D2AA65CDA00781FEF /* Screens */,
@@ -204,8 +209,17 @@
 		5E4410D62AA854C600781FEF /* API */ = {
 			isa = PBXGroup;
 			children = (
+				5E4410D72AA8553600781FEF /* FlickerAPI.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		5E4410D92AA8553F00781FEF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5E4410DA2AA8554E00781FEF /* NetworkServices.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		5EBC44622A4E7DD8003A56F0 /* Helpers */ = {
@@ -357,8 +371,10 @@
 				5E1920302A41EBFD0073E844 /* Constants.swift in Sources */,
 				5EBC44642A4E7E01003A56F0 /* AnimationHelper.swift in Sources */,
 				5E44108F2AA65CEC00781FEF /* ImageSearchViewR.swift in Sources */,
+				5E4410DB2AA8554E00781FEF /* NetworkServices.swift in Sources */,
 				5E4410922AA65D4500781FEF /* FlickerStore.swift in Sources */,
 				5EE4492F2A77D78F002AD1B2 /* MessageBubble.swift in Sources */,
+				5E4410D82AA8553600781FEF /* FlickerAPI.swift in Sources */,
 				5E3F31D12A4175170076487E /* ContentView.swift in Sources */,
 				5E3F31CF2A4175170076487E /* GuideApp.swift in Sources */,
 			);

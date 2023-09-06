@@ -8,14 +8,12 @@
 import SwiftUI
 
 fileprivate struct ImagesearchDetail : View {
-    var imageURL : String;
-    var imageID : String;
     var ns : Namespace.ID;
-    var onPressImage : () -> Void ;
+    @EnvironmentObject var flickerStore : FlickerStore;
     
     var body : some View {
         VStack {
-            AsyncImage(url: URL(string: imageURL) , content:  { image in
+            AsyncImage(url: URL(string: flickerStore.state.imageURL ?? "") , content:  { image in
                 image
                     .resizable()
                     .aspectRatio(contentMode: .fit)
@@ -23,12 +21,14 @@ fileprivate struct ImagesearchDetail : View {
             }, placeholder:  {
                 ProgressView()
             })
-            .matchedGeometryEffect(id: "image\(imageID)", in: ns)
+            .matchedGeometryEffect(id: "image\(flickerStore.state.imageID!)", in: ns)
             .onTapGesture {
-                onPressImage();
+                withAnimation {
+                    flickerStore.state.imageURL = nil;
+                }
             }
             VStack {
-                Text("\(imageID)")
+                Text("\(flickerStore.state.imageID!)")
                     .font(.system(size: 20))
                     .bold()
                     .multilineTextAlignment(.center)
@@ -43,7 +43,6 @@ fileprivate struct ImageSearch: View {
     @EnvironmentObject var flickerStore : FlickerStore ;
     @State var searchText : String = "";
     var ns : Namespace.ID;
-    var onPressImage : (_ url : String, _ name : String ) -> Void ;
     
     var body: some View {
         VStack {
@@ -86,7 +85,10 @@ fileprivate struct ImageSearch: View {
                             })
                             .matchedGeometryEffect(id: "image\(image.0)", in: ns)
                             .onTapGesture {
-                                onPressImage(image.1,image.0);
+                                flickerStore.state.imageID = image.0
+                                withAnimation {
+                                    flickerStore.state.imageURL = image.1
+                                }
                             }
                         }
                     }
@@ -98,27 +100,16 @@ fileprivate struct ImageSearch: View {
 }
 
 struct FlickerImageRedux : View {
-    @State var imageURL : String?;
-    @State var imageID : String?;
     @Namespace var ns ;
-    
     @EnvironmentObject var flickerStore : FlickerStore;
+    
     var body : some View {
         ZStack {
-            ImageSearch(ns: ns ,onPressImage: { image, id in
-                imageID = id;
-                withAnimation{
-                    imageURL = image;
-                }
-            })
-            .opacity(imageURL == nil ? 1 : 0 )
-            if let imageURL,let imageID {
-                ImagesearchDetail(imageURL: imageURL, imageID: imageID,  ns: ns , onPressImage : {
-                    withAnimation {
-                        self.imageURL = nil;
-                        self.imageID = nil;
-                    }
-                })
+            ImageSearch(ns: ns)
+                .opacity(flickerStore.state.imageURL == nil ? 1 : 0 )
+            if let _ = flickerStore.state.imageURL,
+               let _ = flickerStore.state.imageID {
+                ImagesearchDetail(ns: ns )
             }
         }
     }
@@ -126,9 +117,5 @@ struct FlickerImageRedux : View {
 
 #Preview {
     @Namespace var ns;
-    
-    return ImageSearch(ns : ns ,  onPressImage:  {image , id  in
-        print(image)
-        print(id)
-    })
+    return ImageSearch(ns : ns )
 }
